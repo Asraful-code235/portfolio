@@ -10,6 +10,7 @@ import solution from "./schemas/solution";
 import caseStudy from "./schemas/caseStudy";
 import teamBio from "./schemas/teamBio";
 import workWithUs from "./schemas/workWithUs";
+import heroSlider from "./schemas/heroSlider";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -23,5 +24,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     teamBio,
     workWithUs,
     blockContent,
+    heroSlider,
   ],
 };
