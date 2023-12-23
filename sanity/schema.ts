@@ -14,16 +14,16 @@ import heroSlider from "./schemas/heroSlider";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
+    heroSlider,
     about,
+    teamBio,
+    workWithUs,
     solution,
     caseStudy,
     industry,
     post,
     author,
     category,
-    teamBio,
-    workWithUs,
     blockContent,
-    heroSlider,
   ],
 };
