@@ -11,6 +11,26 @@ export default defineType({
       type: "string",
     }),
     defineField({
+      name: "subtitle",
+      title: "SubTitle",
+      type: "string",
+    }),
+    defineField({
+      name: "caption",
+      title: "Caption",
+      type: "string",
+    }),
+    defineField({
+      name: "linkText",
+      title: "URL Link Text",
+      type: "string",
+    }),
+    defineField({
+      name: "url",
+      title: "url",
+      type: "string",
+    }),
+    defineField({
       name: "description",
       title: "Description",
       type: "text",
