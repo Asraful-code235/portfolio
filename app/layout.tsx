@@ -20,58 +20,43 @@ export default function RootLayout({
     <html lang="en">
       <Container>{children}</Container>
 
+      <Script src="/assets/scripts/core.jquery.js" strategy="lazyOnload" />
       <Script
-        src="../components/assets/scripts/core.jquery.js"
+        src="/assets/scripts/plugin.imagesloaded.pkgd.js"
         strategy="lazyOnload"
       />
       <Script
-        src="../components/assets/scripts/plugin.imagesloaded.pkgd.js"
+        src="/assets/scripts/plugin.in-viewport.js"
+        strategy="lazyOnload"
+      />
+      <Script src="/assets/scripts/plugin.animate.js" strategy="lazyOnload" />
+      <Script
+        src="/assets/scripts/plugin.isotope.pkgd.min.js"
         strategy="lazyOnload"
       />
       <Script
-        src="../components/assets/scripts/plugin.in-viewport.js"
+        src="/assets/scripts/plugin.ScrollToPlugin.min.js"
+        strategy="lazyOnload"
+      />
+      <Script src="/assets/scripts/plugin.SplitText.js" strategy="lazyOnload" />
+      <Script
+        src="/assets/scripts/plugin.TweenMax.min.js"
         strategy="lazyOnload"
       />
       <Script
-        src="../components/assets/scripts/plugin.animate.js"
+        src="/assets/scripts/plugin.touchSwipe.min.js"
+        strategy="lazyOnload"
+      />
+      <Script src="/assets/scripts/plugin.typed.min.js" strategy="lazyOnload" />
+      <Script
+        src="/assets/plugins/nevo-slider/nevo-slider.js"
         strategy="lazyOnload"
       />
       <Script
-        src="../components/assets/scripts/plugin.isotope.pkgd.min.js"
+        src="/assets/plugins/nevo-lightbox/nevo-lightbox.js"
         strategy="lazyOnload"
       />
-      <Script
-        src="../components/assets/scripts/plugin.ScrollToPlugin.min.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="../components/assets/scripts/plugin.SplitText.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="../components/assets/scripts/plugin.TweenMax.min.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="../components/assets/scripts/plugin.touchSwipe.min.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="../components/assets/scripts/plugin.typed.min.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="../components/assets/plugins/nevo-slider/nevo-slider.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="../components/assets/plugins/nevo-lightbox/nevo-lightbox.js"
-        strategy="lazyOnload"
-      />
-      <Script
-        src="../components/assets/scripts/main.functions.js"
-        strategy="lazyOnload"
-      />
+      <Script src="/assets/scripts/main.functions.js" strategy="lazyOnload" />
     </html>
   );
 }
