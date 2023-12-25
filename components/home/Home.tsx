@@ -1,26 +1,4 @@
-"use client";
-import { useRef } from "react";
-import Slider from "react-slick";
-import Typed from "react-typed";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
-
 export default function HomePage() {
-  const ref = useRef<any>(null);
-  const settings = {
-    dots: false,
-    // infinite: true,
-    speed: 500,
-
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    // autoplay: true,
-  };
-
   return (
     <section className="nevo-slider halfscreen">
       <div className="slides">

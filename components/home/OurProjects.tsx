@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 const teamMembers = [
   {
     imgSrc: "/images/team/1.jpeg",
@@ -38,48 +34,20 @@ const teamMembers = [
 
 export default function OurProjects() {
   return (
-    <motion.section className="section-size-2 black-bg light-text" id="team">
-      <motion.div
-        whileInView={{
-          opacity: [0, 1],
-          y: [20, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: "easeInOut",
-        }}
-        className="container"
-      >
+    <section className="section-size-2 black-bg light-text" id="team">
+      <div className="container">
         <div className="grid">
-          <div
-            className="column-12 text-center animated-text done-animating "
-            style={{
-              opacity: "1",
-            }}
-          >
+          <div className="column-12 text-center animated-text ">
             <h5 className="grey-text">Your project</h5>
             <h2>In the best possible hands</h2>
             <div className="space-3"></div>
           </div>
         </div>
-      </motion.div>
-      <motion.div
-        whileInView={{
-          opacity: [0, 1],
-          y: [20, 0],
-        }}
-        transition={{
-          duration: 0.5,
-          ease: "easeInOut",
-        }}
-        className="container pad-3"
-      >
+      </div>
+      <div className="container pad-3">
         <div className="grid masonry columns-3">
           {teamMembers.map((member, index) => (
-            <div
-              key={index}
-              className="grid-item column undefined has-animated"
-            >
+            <div key={index} className="grid-item column undefined ">
               <div className="thumb">
                 <img alt="Nevo example image" src={member.imgSrc} />
                 <ul className="labels">
@@ -107,7 +75,7 @@ export default function OurProjects() {
             </div>
           ))}
         </div>
-      </motion.div>
+      </div>
       <div className="container">
         <div className="space-3"></div>
         <div className="grid">
@@ -119,6 +87,6 @@ export default function OurProjects() {
           </div>
         </div>
       </div>
-    </motion.section>
+    </section>
   );
 }

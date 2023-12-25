@@ -1,24 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
-"use client";
-import { motion } from "framer-motion";
 
 export default function OurTeam() {
   return (
-    <motion.section
-      whileInView={{
-        opacity: [0, 1],
-        y: [20, 0],
-      }}
-      transition={{
-        duration: 0.5,
-        ease: "easeInOut",
-      }}
-      className="section-size-2 lighter-bg"
-    >
-      <motion.div className="container">
+    <section className="section-size-2 lighter-bg">
+      <div className="container">
         <div className="grid">
           <div
-            className="column-12 text-center text-left-mobile animated-text done-animating "
+            className="column-12 text-center text-left-mobile animated-text"
             style={{
               opacity: "1",
             }}
@@ -33,8 +21,8 @@ export default function OurTeam() {
             <img alt="Nevo example image" src="/images/blog/9.jpeg" />
           </div>
         </div>
-      </motion.div>
-      <motion.div className="container">
+      </div>
+      <div className="container">
         <div className="space-4"></div>
         <div className="grid center text-center">
           <div className="column-6">
@@ -44,7 +32,7 @@ export default function OurTeam() {
             </p>
           </div>
         </div>
-      </motion.div>
-    </motion.section>
+      </div>
+    </section>
   );
 }

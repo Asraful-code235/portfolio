@@ -1,17 +1,8 @@
-"use client";
-import { motion } from "framer-motion";
-
 export default function Interviews() {
   return (
-    <motion.section className="section-size-2 lighter-bg">
-      <motion.div className="container">
-        <motion.div
-          whileInView={{
-            opacity: [0, 1],
-            y: [20, 0],
-          }}
-          className="grid "
-        >
+    <section className="section-size-2 lighter-bg">
+      <div className="container">
+        <div className="grid ">
           <div className="column-3 column-tablet-6 column-mobile-12">
             <h5>Interviews</h5>
             <ul className="list">
@@ -48,8 +39,8 @@ export default function Interviews() {
               <li>Rams Winner 2016</li>
             </ul>
           </div>
-        </motion.div>
-      </motion.div>
-    </motion.section>
+        </div>
+      </div>
+    </section>
   );
 }

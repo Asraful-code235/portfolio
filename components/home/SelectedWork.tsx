@@ -1,7 +1,7 @@
 "use client";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 const data = [
   {
@@ -54,12 +54,12 @@ export default function SelectedWork() {
     setOpen(!open);
   };
   return (
-    <motion.section className="section-size-1">
-      <motion.div
-        whileInView={{
-          opacity: [0, 1],
-          y: [20, 0],
-        }}
+    <section className="section-size-1">
+      <div
+        // whileInView={{
+        //   opacity: [0, 1],
+        //   y: [20, 0],
+        // }}
         className="container"
       >
         <div className="grid vcenter">
@@ -113,25 +113,25 @@ export default function SelectedWork() {
             </ul>
           </div>
         </div>
-        <motion.div
+        <div
           className="grid masonry columns-3 columns-tablet-2"
-          whileInView={{
-            opacity: [0, 1],
-            y: [20, 0],
-          }}
-          transition={{
-            duration: 0.3,
-            ease: "easeInOut",
-            delayChildren: 0.2,
-          }}
+          // whileInView={{
+          //   opacity: [0, 1],
+          //   y: [20, 0],
+          // }}
+          // transition={{
+          //   duration: 0.3,
+          //   ease: "easeInOut",
+          //   delayChildren: 0.2,
+          // }}
           id="grid"
         >
           {data.map((item, index: number) => (
-            <motion.div
+            <div
               key={index}
-              transition={{
-                delay: 0.2 * index,
-              }}
+              // transition={{
+              //   delay: 0.2 * index,
+              // }}
               className={`grid-item column ${item.labels} has-animated`}
             >
               <a className="thumb space-2 animated" href={item.link}>
@@ -145,10 +145,10 @@ export default function SelectedWork() {
                   <div className="sub">{item.sub}</div>
                 </div>
               </a>
-            </motion.div>
+            </div>
           ))}
-        </motion.div>
-      </motion.div>
-    </motion.section>
+        </div>
+      </div>
+    </section>
   );
 }
