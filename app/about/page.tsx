@@ -1,9 +1,14 @@
+"use client";
 import Brands from "@/components/about/Brands";
 import Gallery from "@/components/about/Gallery";
 import TeamSection from "@/components/about/TeamSection";
+import { useDataFetching } from "@/lib/sanity";
+import PortableText from "react-portable-text";
 
 /* eslint-disable react/no-unescaped-entities */
-export default function page() {
+export default function AboutPage() {
+  const data = useDataFetching(`*[_type == "about"]`);
+
   return (
     <div className="content">
       <section className="section-size-6 lighter-bg background-zoom">
@@ -25,14 +30,9 @@ export default function page() {
         <div className="container">
           <div className="grid">
             <div className="column-6 centered text-center">
-              <h2>Think. Create. Iterate.</h2>
+              <h2>{(data && data[0]?.title) || "Think. Create. Iterate."}</h2>
               <div className="space-2"></div>
-              <p>
-                Out motto is simple, we care for the products we make and make
-                them better every day. Sit amet consectetur{" "}
-                <a href="#">better products</a>. Obcaecati consequuntur vel
-                cupiditate eveniet accusantium.
-              </p>
+              <div>{data && <PortableText content={data[0]?.body} />}</div>
             </div>
           </div>
         </div>

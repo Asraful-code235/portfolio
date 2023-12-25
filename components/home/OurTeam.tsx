@@ -5,12 +5,7 @@ export default function OurTeam() {
     <section className="section-size-2 lighter-bg">
       <div className="container">
         <div className="grid">
-          <div
-            className="column-12 text-center text-left-mobile animated-text"
-            style={{
-              opacity: "1",
-            }}
-          >
+          <div className="column-12 text-center text-left-mobile animated-text">
             <h2>It's true.</h2>
             <h5 className="grey-text">Small things make you big.</h5>
             <div className="space-3"></div>

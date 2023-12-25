@@ -1,3 +1,6 @@
+"use client";
+import { useDataFetching } from "@/lib/sanity";
+
 const teamMembers = [
   {
     imgSrc: "/images/team/1.jpeg",
@@ -33,6 +36,8 @@ const teamMembers = [
 ];
 
 export default function OurProjects() {
+  const data = useDataFetching(`*[_type == "teamBio"]`);
+  console.log(data);
   return (
     <section className="section-size-2 black-bg light-text" id="team">
       <div className="container">
