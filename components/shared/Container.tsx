@@ -9,25 +9,6 @@ export default function Container({ children }: { children: ReactNode }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-  // Handle toggle navbar
-  const handleNavbar = () => setIsOpenMenu((prev) => !prev);
-
-  // Scrolled header
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
   return (
     <body
       className={` ${menuClicked ? "menu-opened" : ""} ${

@@ -497,56 +497,54 @@ table {
   font-family: "hk-carta";
   font-style: normal;
   font-weight: 400;
-  src: url(../components/fonts/hk-carta/HKCarta-Regular.woff2) format("woff2"),
-    url(../components/fonts/hk-carta/HKCarta-Regular.woff) format("woff"),
-    url(../components/fonts/hk-carta/HKCarta-Regular.eot) format("eot");
+  src: url(/fonts/hk-carta/HKCarta-Regular.woff2) format("woff2"),
+    url(/fonts/hk-carta/HKCarta-Regular.woff) format("woff"),
+    url(/fonts/hk-carta/HKCarta-Regular.eot) format("eot");
 }
 
 @font-face {
   font-family: "hk-nova";
   font-style: normal;
   font-weight: 500;
-  src: url(../components/fonts/hk-nova/HKNova-Medium.woff2) format("woff2"),
-    url(../components/fonts/hk-nova/HKNova-Medium.woff) format("woff"),
-    url(../components/fonts/hk-nova/HKNova-Medium.eot) format("eot");
+  src: url(/fonts/hk-nova/HKNova-Medium.woff2) format("woff2"),
+    url(/fonts/hk-nova/HKNova-Medium.woff) format("woff"),
+    url(/fonts/hk-nova/HKNova-Medium.eot) format("eot");
 }
 
 @font-face {
   font-family: "hk-grotesk";
   font-style: normal;
   font-weight: 300;
-  src: url(../components/fonts/hk-grotesk/HKGrotesk-Light.woff2) format("woff2"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-Light.woff) format("woff"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-Light.eot) format("eot");
+  src: url(/fonts/hk-grotesk/HKGrotesk-Light.woff2) format("woff2"),
+    url(/fonts/hk-grotesk/HKGrotesk-Light.woff) format("woff"),
+    url(/fonts/hk-grotesk/HKGrotesk-Light.eot) format("eot");
 }
 
 @font-face {
   font-family: "hk-grotesk";
   font-style: normal;
   font-weight: 400;
-  src: url(../components/fonts/hk-grotesk/HKGrotesk-Regular.woff2)
-      format("woff2"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-Regular.woff) format("woff"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-Regular.eot) format("eot");
+  src: url(/fonts/hk-grotesk/HKGrotesk-Regular.woff2) format("woff2"),
+    url(/fonts/hk-grotesk/HKGrotesk-Regular.woff) format("woff"),
+    url(/fonts/hk-grotesk/HKGrotesk-Regular.eot) format("eot");
 }
 
 @font-face {
   font-family: "hk-grotesk";
   font-style: normal;
   font-weight: 500;
-  src: url(../components/fonts/hk-grotesk/HKGrotesk-SemiBold.woff2)
-      format("woff2"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-SemiBold.woff) format("woff"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-SemiBold.eot) format("eot");
+  src: url(/fonts/hk-grotesk/HKGrotesk-SemiBold.woff2) format("woff2"),
+    url(/fonts/hk-grotesk/HKGrotesk-SemiBold.woff) format("woff"),
+    url(/fonts/hk-grotesk/HKGrotesk-SemiBold.eot) format("eot");
 }
 
 @font-face {
   font-family: "hk-grotesk";
   font-style: normal;
   font-weight: 700;
-  src: url(../components/fonts/hk-grotesk/HKGrotesk-Bold.woff2) format("woff2"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-Bold.woff) format("woff"),
-    url(../components/fonts/hk-grotesk/HKGrotesk-Bold.eot) format("eot");
+  src: url(/fonts/hk-grotesk/HKGrotesk-Bold.woff2) format("woff2"),
+    url(/fonts/hk-grotesk/HKGrotesk-Bold.woff) format("woff"),
+    url(/fonts/hk-grotesk/HKGrotesk-Bold.eot) format("eot");
 }
 
 .grid {
@@ -1377,8 +1375,8 @@ html {
   overflow-y: scroll;
 }
 
-/* html:before {
-  content: '';
+html:before {
+  content: "";
   display: block;
   position: fixed;
   top: 0;
@@ -1390,20 +1388,22 @@ html {
 }
 
 html:after {
-  content: '';
+  content: "";
   z-index: 11;
 }
 
-html:before, html:after {
+html:before,
+html:after {
   opacity: 1;
   visibility: visible;
   transition: opacity 1s, visibility 1s;
 }
 
-html.loaded:before, html.loaded:after {
+html.loaded:before,
+html.loaded:after {
   opacity: 0;
   visibility: hidden;
-} */
+}
 
 .wrapper {
   min-height: 100%;
@@ -1462,9 +1462,9 @@ html.loaded:before, html.loaded:after {
   filter: blur(10px) opacity(30%);
 }
 
-/* .typed-content {
+.typed-content {
   display: none;
-} */
+}
 
 .loader,
 html:after {
@@ -1710,12 +1710,6 @@ a#to-top hr:last-child {
 
 .scrolled #to-top {
   display: block;
-}
-#dtr-header-global.on-scroll {
-  padding: 15px 0;
-  border-width: 0;
-  box-shadow: 0 2px 40px 0 hsla(240, 0%, 6%, 0.05);
-  z-index: 999;
 }
 
 .thumb {
@@ -2206,8 +2200,9 @@ header.header,
     padding-top: 5rem;
   }
   body.menu-opened header.header {
-    height: 100%;
+    height: 100% !important;
     -webkit-overflow-scrolling: touch;
+    background-color: white;
   }
 }
 
@@ -2370,7 +2365,7 @@ header.header,
     font-family: "hk-nova", serif;
   }
   body.nav-alt.menu-opened header.header {
-    height: 100vh;
+    height: 100dvh;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
     background: white !important;
   }
@@ -2548,7 +2543,21 @@ ul.grid-filters li:last-child a {
     position: relative;
     cursor: pointer;
   }
-
+  /* ul.grid-filters:before,
+  ul.grid-filters:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 2rem;
+    border-top: 2px solid #1d1e20;
+    transition: all 0.15s;
+  } */
+  /* ul.grid-filters:before {
+    top: 0.75rem;
+  }
+  ul.grid-filters:after {
+    top: 1.25rem;
+  } */
   ul.grid-filters li {
     display: none;
   }
@@ -2558,11 +2567,11 @@ ul.grid-filters li:last-child a {
     font-size: 1rem;
   }
   ul.grid-filters.open {
-    /* padding: 3rem 0 0; */
+    padding: 3rem 0 0;
   }
   ul.grid-filters.open:before,
   ul.grid-filters.open:after {
-    top: 0.5rem;
+    top: 1rem;
   }
   ul.grid-filters.open:before {
     transform: rotate(45deg);

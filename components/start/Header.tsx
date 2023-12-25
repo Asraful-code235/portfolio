@@ -12,11 +12,7 @@ export default function Header({
   return (
     <>
       <header
-        className={`header transition-transform duration-1000 delay-1000 ${
-          isScrolled
-            ? "!fixed !h-20 md:!h-12 !top-0 !left-0 !right-0 !-translate-y-100 hidden bg-white"
-            : "!fixed !top-0 !left-0 !right-0"
-        } `}
+        className={`header transition-transform duration-1000 delay-1000  `}
       >
         <a className="brand" href="/">
           {" "}
