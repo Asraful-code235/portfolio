@@ -6,6 +6,7 @@ import post from "./schemas/post";
 import author from "./schemas/author";
 import about from "./schemas/about";
 import industry from "./schemas/industry";
+import service from "./schemas/service";
 import solution from "./schemas/solution";
 import caseStudy from "./schemas/caseStudy";
 import teamBio from "./schemas/teamBio";
@@ -18,6 +19,7 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     about,
     teamBio,
     workWithUs,
+    service,
     solution,
     caseStudy,
     industry,
