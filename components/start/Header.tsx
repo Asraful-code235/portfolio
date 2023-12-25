@@ -18,7 +18,7 @@ export default function Header({
             : "!fixed !top-0 !left-0 !right-0"
         } `}
       >
-        <a className="brand" href="index.html">
+        <a className="brand" href="/">
           {" "}
           <img
             className="default"
@@ -32,11 +32,11 @@ export default function Header({
           />
         </a>
         <ul className="menu main">
-          <li className="menu-item has-dropdown">
-            <a className="menu-link" href="index.html">
+          <li className="menu-item ">
+            <a className="menu-link" href="/">
               Home
             </a>
-            <ul className="dropdown-nav">
+            {/* <ul className="dropdown-nav">
               <li className="menu-item">
                 <a className="menu-link" href="index.html">
                   Studio
@@ -47,13 +47,13 @@ export default function Header({
                   Freelancer
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li className="menu-item has-dropdown">
-            <a className="menu-link" href="pages/about-studio.html">
+          <li className="menu-item">
+            <a className="menu-link" href="/about">
               About
             </a>
-            <ul className="dropdown-nav">
+            {/* <ul className="dropdown-nav">
               <li className="menu-item">
                 <a className="menu-link" href="pages/about-studio.html">
                   Studio
@@ -64,9 +64,9 @@ export default function Header({
                   Freelancer
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li className="menu-item has-dropdown">
+          {/* <li className="menu-item has-dropdown">
             <a className="menu-link" href="pages/elements.html">
               Features
             </a>
@@ -92,12 +92,12 @@ export default function Header({
                 </a>
               </li>
             </ul>
-          </li>
-          <li className="menu-item has-dropdown">
-            <a className="menu-link" href="pages/portfolio-default.html">
+          </li> */}
+          <li className="menu-item ">
+            <a className="menu-link" href="/portfolio">
               Portfolio
             </a>
-            <ul className="dropdown-nav">
+            {/* <ul className="dropdown-nav">
               <li className="menu-item">
                 <a className="menu-link" href="pages/portfolio-default.html">
                   Default
@@ -139,9 +139,9 @@ export default function Header({
                   Single Project
                 </a>
               </li>
-            </ul>
+            </ul> */}
           </li>
-          <li className="menu-item has-dropdown">
+          {/* <li className="menu-item has-dropdown">
             <a className="menu-link" href="pages/blog.html">
               Blog
             </a>
@@ -158,9 +158,9 @@ export default function Header({
               </li>
               <li className="menu-item"></li>
             </ul>
-          </li>
+          </li> */}
           <li className="menu-item">
-            <a className="menu-link" href="pages/contact.html">
+            <a className="menu-link" href="/contact">
               Contact
             </a>
           </li>
