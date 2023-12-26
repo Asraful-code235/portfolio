@@ -7,7 +7,8 @@ import PortableText from "react-portable-text";
 
 /* eslint-disable react/no-unescaped-entities */
 export default function AboutPage() {
-  const data = useDataFetching(`*[_type == "about"]`);
+  const data: Array<{ title?: string; body?: any }> | null =
+    useDataFetching(`*[_type == "about"]`);
 
   return (
     <div className="content">
@@ -30,9 +31,23 @@ export default function AboutPage() {
         <div className="container">
           <div className="grid">
             <div className="column-6 centered text-center">
-              <h2>{(data && data[0]?.title) || "Think. Create. Iterate."}</h2>
+              <h2>
+                {(data &&
+                  //@ts-ignore
+                  data[0]?.title) ||
+                  "Think. Create. Iterate."}
+              </h2>
               <div className="space-2"></div>
-              <div>{data && <PortableText content={data[0]?.body} />}</div>
+              <div>
+                {data && (
+                  <PortableText
+                    content={
+                      //@ts-ignore
+                      data[0]?.body
+                    }
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
